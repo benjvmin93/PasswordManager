@@ -2,7 +2,8 @@
 A simple interactive password manager for Linux.
 
 # Informations
-The script creates a folder in the ```/home/$user/``` folder, with read and write rights to the current user.
+The script creates a folder ```/home/$user/.pmanager/$user```, with read and write rights to the current user.
+Your session password is required once to grant these accesses.
 
 # How to use
 
