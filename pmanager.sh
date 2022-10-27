@@ -7,9 +7,9 @@ user=$(whoami)
 function begin() {
     echo "   ___                                    _                                               "
     echo "  / _ \__ _ ___ _____      _____  _ __ __| |   _ __ ___   __ _ _ __   __ _  __ _  ___ _ __ "
-    echo " / /_)/ _\` / __/ __\ \ /\  / / _ \| '__/ _\` |  | '_ \` _ \ / _\` | '_ \ / _\` |/ _\` |/ _ \ '__|"
-    echo "/ ___/ (_| \__ \__ \\ V  V / (_) | | | (_| |  | | | | | | (_| | | | | (_| | (_| |  __/ |   "
-    echo "\/    \__,_|___/___/ \_/\_/ \___/|_|  \__,_|  |_| |_| |_|\__,_|_| |_|\__,_|\__, |\___|_|   "
+    echo " / /_)/ _\` / __/ _\ \ /\ / / _ \| '__/ _  \`|  | '_ \` _\ / _ \` | '_ \ / _ \`|/ _\` |/ _ \ '__|"
+    echo "/ ___/ (_| \__ \__ \\ V  V / (_) | | | (_|  |  | | | | | | (_| | | | | (_| | (_| |  __/ |   "
+    echo "\/    \__,_|___/___/\_/\_/ \___/|_|  \__,_ |  |_| |_| |_|\__,_|_| |_|\__,_|\__, |\___|_|   "
     echo "                                                                           |___/            "
 }                                                                                                                                                       
 
@@ -18,11 +18,11 @@ function usage() {
     begin
     echo 'Usage:'
     echo -e "\t./pmanager.sh"
-    echo 'Commands:'
+    echo 'Options:'
     echo -e "\t--add: add a new password."
     echo -e "\t--get: get a password."
     echo -e "\t--list [\$labelName]: list all saved accounts. If \$labelName is specified, lists only the accounts contained inside the \$labelName folder."
-    echo -e "\t--delete: delete an account. If \$labelName is specified, delete the entire \$labelName folder."
+    echo -e "\t--delete [\$labelName]: delete an account. If \$labelName is specified, delete the entire \$labelName folder."
 
     exit 0
 }
